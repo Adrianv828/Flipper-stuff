@@ -1,2 +1,2 @@
 # Flipper-stuff
-Just some things that I coded for my flipper
+This is a bunch of stuff that I coded to be used on the flipper zero. Nothing is harmful its just for fun and examples.
