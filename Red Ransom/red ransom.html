@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Red Ransom</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+     body {
+      background: #ff0000;            
+      color: #000;             
+      display: flex;
+      align-items: flex-start;        
+      justify-content: flex-start;    
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      padding: 1rem;
+      padding-top: 25vh;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      z-index: 2; /* ensure content sits above the fixed image */
+
+    }
+    .stack {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .line {
+      font-size: clamp(1.0rem, 2.8vw, 1.6rem);
+      line-height: 1.5;
+      margin: 0;
+      color: #000;
+      text-align: left;
+    }
+
+.string {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .brand {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      font-weight: 700;
+      color: #000;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      z-index: 9999;
+    }
+
+    .side-image {
+      position: fixed;
+      right: 1.5rem; /* moved to the right edge */
+      top: 60%; /* moved down */
+      transform: translateY(-20%); /* fine vertical adjustment */
+      width: clamp(220px, 28vw, 640px); /* smaller responsive size */
+      max-width: none;
+      height: auto;
+      z-index: 0; /* behind content */
+      opacity: 0.85;
+      pointer-events: none;
+    }
+  </style> 
+</head>
+<body>  
+  <div class="brand">REDRANSOM.EXE</div> 
+  <div class="container">
+    <div class="stack">
+      <p class="line"><strong class="string">
+        Hello User,
+        My name is Red Ransom.
+        And your device is now mine.
+        Don't try to leave this page or shut down your device or you will lose all your data.
+        Simply restart your device then follow the instructions to recover your files.
+        You have 5 minutes to do so or I keep your fliles forever.
+        Good luck! -Sincrely, Red Ransom. ;)
+      </strong></p>
+
+<img src="file:///C:/Users/selma/OneDrive/Desktop/images.png" alt="ransom" class="side-image" />
+    </div>
